@@ -43,9 +43,9 @@ set wildmenu
 " KEYBINDING
 let mapleader = ","
 
-" paste from system clipboard
+nnoremap - :e %.p.h<cr> "go to folder
 nnoremap <leader><space> :nohl<cr>
-nnoremap <leader>p i<c-r>+<esc> 
+nnoremap <leader>p i<c-r>+<esc> " paste from system clipboard
 
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
