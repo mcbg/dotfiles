@@ -2,16 +2,6 @@
 
 autocmd!
 
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-call vundle#end()
-filetype plugin indent on   
-
 set autoread " update file changes 
 set hidden " allow bg buffers
 
@@ -41,8 +31,10 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 set wildmenu
 
 " KEYBINDING
-let mapleader = ","
+let mapleader = " "  
+"let localleader = ","
 
+nnoremap <leader>w :w<cr>
 nnoremap <leader>w :w<cr>
 nnoremap - :e %.p.h<cr> "go to folder
 nnoremap <leader><space> :nohl<cr>
