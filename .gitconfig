@@ -5,6 +5,7 @@
 [alias]
   hist = log --graph --pretty=format:'%h %ad | %s %d ' --date=short
   st = status
+  cl = clean
   ci = commit --verbose
   co = checkout
   di = diff
