@@ -19,3 +19,6 @@
   # Goodness (summary of diff lines added/removed/total)
   gn = goodness
   gnc = goodness --cached
+
+[push]
+	default = simple
